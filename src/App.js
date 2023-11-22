@@ -17,7 +17,7 @@ function App() {
   useEffect(()=>{
     async function getNews(){
       setData(null);
-      const res =  await fetch(`https://inshorts.deta.dev/news?category=${selected}`);
+      const res =  await fetch(`https://inshortsapi.vercel.app/news?category=${selected}`);
       const response  = await res.json();
       setData(response.data);
     }
